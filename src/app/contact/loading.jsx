@@ -1,7 +1,3 @@
-import React from "react";
-
-function Loading() {
-	return <div>Loading</div>;
+export default function Loader({ show }) {
+	return show ? <div className='loader'></div> : null;
 }
-
-export default Loading;

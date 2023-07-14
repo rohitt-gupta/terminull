@@ -36,3 +36,8 @@ body {
 	flex-direction: column;
 	justify-content: space-between;
 }
+
+.custom-text-clip {
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
