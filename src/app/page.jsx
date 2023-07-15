@@ -19,7 +19,7 @@ export default function Home() {
 				<Image
 					src={Hero}
 					alt='Hero 3d illustration/image'
-					className=' w-full h-[500px] object-cover '
+					className=' w-full h-[500px] object-contain image animate-homeImageMove '
 				/>
 			</div>
 		</div>

@@ -41,3 +41,54 @@ body {
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 }
+
+.bg-url-illustration {
+	background-image: url("/illustration.png");
+}
+
+.bg-url-websites {
+	background-image: url("/websites.jpg");
+}
+
+.bg-url-apps {
+	background-image: url("/apps.jpg");
+}
+
+h1 {
+	font-size: 2.25rem /* 36px */;
+	font-weight: 700;
+}
+h2 {
+	font-size: 1.875rem /* 36px */;
+	font-weight: 600;
+}
+
+@keyframes move {
+	from {
+		transform: translateY(-15px);
+	}
+	to {
+		transform: translateY(0px) scale(1.03);
+	}
+}
+
+@keyframes homeImageMove {
+	from {
+		transform: translateY(-15px);
+	}
+	to {
+		transform: translateY(10px);
+	}
+}
+
+.animate-homeImageMove {
+	animation: homeImageMove 3s infinite ease alternate;
+}
+
+.animate-move {
+	animation: move 3s infinite ease alternate;
+}
+
+.important-bg-cover {
+	background-size: cover !important;
+}
