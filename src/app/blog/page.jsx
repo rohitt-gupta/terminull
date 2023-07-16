@@ -20,7 +20,7 @@ const Blog = async () => {
 		<div className='conti_ner'>
 			{data.map((item) => (
 				<Link
-					href='/blog/testId'
+					href={`/blog/${item.id}`}
 					className='flex items-center gap-[50px] mb-[50px]'
 					key={item.id}
 				>
