@@ -18,13 +18,26 @@
 
 body {
 	text-decoration: none;
+}
+
+.theme {
+	transition: 1s all ease;
+}
+
+.light {
+	background-color: white;
+	color: #111;
+}
+
+.dark {
 	color: #bbb;
-	background: linear-gradient(
+	background-color: black;
+	/* background: linear-gradient(
 			to bottom,
 			transparent,
 			rgb(var(--background-end-rgb))
 		)
-		rgb(var(--background-start-rgb));
+		rgb(var(--background-start-rgb)); */
 }
 
 .container {

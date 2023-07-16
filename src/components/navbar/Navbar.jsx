@@ -1,6 +1,7 @@
 "use client";
 import Link from "next/link";
 import React, { useState } from "react";
+import DarkModeToggle from "../DarkModeToggle/DarkModeToggle";
 
 const links = [
 	{
@@ -42,6 +43,7 @@ function Navbar() {
 				terminu_l
 			</Link>
 			<div className=' flex items-center gap-5 '>
+				<DarkModeToggle />
 				{links.map((link) => (
 					<Link
 						key={link.id}
