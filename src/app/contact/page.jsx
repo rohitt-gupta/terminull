@@ -2,6 +2,12 @@ import { Button } from "@/components/Button/Button";
 import Image from "next/image";
 import React from "react";
 
+export const metadata = {
+	title: "Contact Us",
+	description:
+		"Contact page for contacting ROhit gupta for work related queries of any projects.",
+};
+
 function Contact() {
 	const inputClassname = "  ";
 	return (

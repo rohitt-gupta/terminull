@@ -2,13 +2,14 @@ import Posts from "@/modals/Posts";
 import connect from "@/utils/db";
 import { NextResponse } from "next/server";
 
-export const GET = async (request) => {
+export const GET = async (request, { params }) => {
+	const { id } = params;
 	try {
 		await connect();
 		console.log("Connection successfull");
-		const posts = await Posts.find();
+		const post = await Posts.findById(id);
 
-		return new NextResponse(JSON.stringify(posts), { status: 200 });
+		return new NextResponse(JSON.stringify(post), { status: 200 });
 	} catch (error) {
 		return new NextResponse(error, { status: 500 });
 	}
