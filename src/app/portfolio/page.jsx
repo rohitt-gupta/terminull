@@ -22,7 +22,7 @@ function Portfolio() {
 					<span className={linkTitle}>Websites</span>
 				</Link>
 				<Link
-					href='/portfolio/application'
+					href='/portfolio/applications'
 					className={`${linkCLass} bg-url-apps`}
 				>
 					<span className={linkTitle}>Application</span>
