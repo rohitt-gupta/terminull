@@ -30,7 +30,7 @@ const Blog = async () => {
 							alt=''
 							width={400}
 							height={250}
-							className='object-cover'
+							className=' min-w-[400px] object-cover'
 						/>
 					</div>
 					<div className='content'>
