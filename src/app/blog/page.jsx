@@ -13,18 +13,23 @@ async function getData() {
 
 	return res.json();
 }
-
-const Blog = async () => {
+export async function getServerSideProps() {
 	const data = await getData();
+	return {
+		props: { data },
+	};
+}
+const Blog = async ({ data }) => {
+	// const data = await getData();
 	return (
-		<div className='conti_ner'>
+		<div>
 			{data.map((item) => (
 				<Link
 					href={`/blog/${item._id}`}
 					className='flex items-center gap-[50px] mb-[50px]'
 					key={item.id}
 				>
-					<div className='imgCOntainer'>
+					<div>
 						<Image
 							src={item.img}
 							alt=''
@@ -33,7 +38,7 @@ const Blog = async () => {
 							className=' min-w-[400px] object-cover'
 						/>
 					</div>
-					<div className='content'>
+					<div>
 						<h1 className='mb-[10px]'>{item.title}</h1>
 						<p className='text-xl text-[#999]'>{item.desc}</p>
 					</div>
