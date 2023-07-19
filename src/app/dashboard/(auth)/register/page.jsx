@@ -37,8 +37,10 @@ const Register = () => {
 		"p-5 bg-transparent border-[2px] border-solid border-[#bbb] text-[#bbb] rounded-[5px] text-xl font-bold";
 	return (
 		<div className='flex flex-col gap-[20px] items-center justify-center'>
-			<h1 className='h1'>Create an Account</h1>
-			<h2 className='h2'>Please sign up to see the dashboard.</h2>
+			<h1 className='text-[#bbb]'>Create an Account</h1>
+			<h2 className='text-xl mb-7 text-[#bbb]'>
+				Please sign up to see the dashboard.
+			</h2>
 			<form
 				onSubmit={handleSubmit}
 				className='w-[300px] flex flex-col gap-[20px]'

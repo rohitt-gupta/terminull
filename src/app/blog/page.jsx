@@ -13,14 +13,9 @@ async function getData() {
 
 	return res.json();
 }
-export async function getServerSideProps() {
+
+const Blog = async () => {
 	const data = await getData();
-	return {
-		props: { data },
-	};
-}
-const Blog = async ({ data }) => {
-	// const data = await getData();
 	return (
 		<div>
 			{data.map((item) => (
