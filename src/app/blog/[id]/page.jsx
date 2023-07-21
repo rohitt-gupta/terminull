@@ -9,7 +9,6 @@ async function getData(id) {
 
 	if (!res.ok) {
 		return notFound();
-		// throw new Error("Failed to fetch data");
 	}
 
 	return res.json();
